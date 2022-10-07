@@ -1,0 +1,90 @@
+.main_page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .page_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+        .page_logo{
+            width: 30rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .logo{
+                width: 10rem;
+                object-fit:fill;
+                background-repeat: no-repeat;
+            }
+            .logo_text{
+                margin-top: 1rem;
+                font-family: 'Script MT', Arial, Helvetica, sans-serif;
+                font-size: 3rem;
+            }
+        }
+
+        .search_element{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3rem;
+            input{
+                border: 1px solid #707070;
+                border-radius: 20px;
+                width: 25rem;
+                height: 2.3rem;
+                padding-left: 1rem;
+            }
+
+            .search_button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Poppins', Arial, Helvetica, sans-serif;
+                width: 12rem;
+                height: 2.5rem;
+                border: 1px solid #767026;
+                margin-top: 2rem;
+
+            }
+
+            .search_button:hover{
+                background-color: #E9D659;
+                color: rgb(40, 132, 40);
+                border: 1px solid rgb(40, 132, 40);
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 500px) { 
+    .main_page{
+        .page_content{
+            .page_logo{
+                width: 20rem;
+                .logo{
+                    width: 7rem;
+                }
+
+                .logo_text{
+                    margin-top: 1rem;
+                    font-family: 'Script MT', Arial, Helvetica, sans-serif;
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        .search_element{
+            input.searchBar{
+                width: 14rem;
+            }
+        }
+    }
+}

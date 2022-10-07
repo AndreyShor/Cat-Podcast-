@@ -1,0 +1,39 @@
+.day{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black ;
+    border-radius: 20px;
+
+    .title{
+        font-family: 'Script MT', Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+    }
+
+    .block{
+        width: 15rem;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        margin: 1rem;
+
+        .level{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                margin-right: 1rem;
+            }
+
+            margin-right: 1rem;
+        }
+    }
+
+    .imoggy{
+        img{
+            margin-left: 4rem;
+        }
+    }
+}
